@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { ColorModeContext, useMode } from './theme';
 import Topbar from './scenes/global/Topbar/Topbar';
 import Sidebar from './scenes/global/Sidebar/Sidebar';
@@ -42,6 +43,7 @@ function App() {
           </main>
         </div>
         <Analytics />
+        <SpeedInsights />
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
